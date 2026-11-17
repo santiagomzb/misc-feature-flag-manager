@@ -1,0 +1,16 @@
+{
+  "name": "misc-feature-flag-manager",
+  "private": true,
+  "packageManager": "pnpm@11.1.1",
+  "engines": { "node": ">=22.12.0" },
+  "scripts": {
+    "dev": "pnpm --parallel --filter ./backend --filter ./frontend dev",
+    "test": "pnpm -r test",
+    "typecheck": "pnpm -r typecheck",
+    "build": "pnpm -r build",
+    "docs": "pnpm --filter ./backend run docs",
+    "e2e": "playwright test",
+    "e2e:showcase": "playwright test --headed --workers=1"
+  },
+  "devDependencies": { "@playwright/test": "^1.58.2" }
+}
